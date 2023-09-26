@@ -1,0 +1,6 @@
+C:\Users\claud\OneDrive\Desktop\AN 3\AN 3 SEM 2\BD\BD Proiect\BD PCG Electronics\Proiect BD Magazin Electronice\LibrarieModele\bin\Debug\LibrarieModele.dll
+C:\Users\claud\OneDrive\Desktop\AN 3\AN 3 SEM 2\BD\BD Proiect\BD PCG Electronics\Proiect BD Magazin Electronice\LibrarieModele\bin\Debug\LibrarieModele.pdb
+C:\Users\claud\OneDrive\Desktop\AN 3\AN 3 SEM 2\BD\BD Proiect\BD PCG Electronics\Proiect BD Magazin Electronice\LibrarieModele\obj\Debug\LibrarieModele.csproj.AssemblyReference.cache
+C:\Users\claud\OneDrive\Desktop\AN 3\AN 3 SEM 2\BD\BD Proiect\BD PCG Electronics\Proiect BD Magazin Electronice\LibrarieModele\obj\Debug\LibrarieModele.csproj.CoreCompileInputs.cache
+C:\Users\claud\OneDrive\Desktop\AN 3\AN 3 SEM 2\BD\BD Proiect\BD PCG Electronics\Proiect BD Magazin Electronice\LibrarieModele\obj\Debug\LibrarieModele.dll
+C:\Users\claud\OneDrive\Desktop\AN 3\AN 3 SEM 2\BD\BD Proiect\BD PCG Electronics\Proiect BD Magazin Electronice\LibrarieModele\obj\Debug\LibrarieModele.pdb

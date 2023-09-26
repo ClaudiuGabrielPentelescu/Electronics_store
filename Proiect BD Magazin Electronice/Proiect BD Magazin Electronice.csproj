@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{59DC9D3B-D3AE-4EEB-AF64-3C6F1C15BD8C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Proiect_BD_Magazin_Electronice</RootNamespace>
+    <AssemblyName>Proiect BD Magazin Electronice</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>pcg electronics logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.3.2, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.2\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=2.112.1.2, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.6.0.0\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.6.0.0\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComboItem.cs" />
+    <Compile Include="FormMainAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainAdmin.Designer.cs">
+      <DependentUpon>FormMainAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMainUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainUser.Designer.cs">
+      <DependentUpon>FormMainUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAdaugare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAdaugare.Designer.cs">
+      <DependentUpon>FormAdaugare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormCos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCos.Designer.cs">
+      <DependentUpon>FormCos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormCumparare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCumparare.Designer.cs">
+      <DependentUpon>FormCumparare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormEditare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormEditare.Designer.cs">
+      <DependentUpon>FormEditare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormGestiune.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormGestiune.Designer.cs">
+      <DependentUpon>FormGestiune.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormInregistrare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormInregistrare.Designer.cs">
+      <DependentUpon>FormInregistrare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormIstoric.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormIstoric.Designer.cs">
+      <DependentUpon>FormIstoric.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMagazin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMagazin.Designer.cs">
+      <DependentUpon>FormMagazin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormStergere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormStergere.Designer.cs">
+      <DependentUpon>FormStergere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormUtilizatori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormUtilizatori.Designer.cs">
+      <DependentUpon>FormUtilizatori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormVanzari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormVanzari.Designer.cs">
+      <DependentUpon>FormVanzari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StocareFactory.cs" />
+    <EmbeddedResource Include="FormMainAdmin.resx">
+      <DependentUpon>FormMainAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMainUser.resx">
+      <DependentUpon>FormMainUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAdaugare.resx">
+      <DependentUpon>FormAdaugare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCos.resx">
+      <DependentUpon>FormCos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCumparare.resx">
+      <DependentUpon>FormCumparare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormEditare.resx">
+      <DependentUpon>FormEditare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormGestiune.resx">
+      <DependentUpon>FormGestiune.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormInregistrare.resx">
+      <DependentUpon>FormInregistrare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormIstoric.resx">
+      <DependentUpon>FormIstoric.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMagazin.resx">
+      <DependentUpon>FormMagazin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormStergere.resx">
+      <DependentUpon>FormStergere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormUtilizatori.resx">
+      <DependentUpon>FormUtilizatori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormVanzari.resx">
+      <DependentUpon>FormVanzari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\electronic-gadgets.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pcg electronics logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-fococlipping-standard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4014657_buy_cell_online_phone_store_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\store-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart-2-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\external_content_duckduckgo_Z78_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pcg electronics logo.ico" />
+    <None Include="Resources\delete-24.png" />
+    <None Include="Resources\delete-property-241.png" />
+    <None Include="Resources\edit-property-24.png" />
+    <None Include="Resources\bank-2-24.png" />
+    <None Include="Resources\buy-2-24.png" />
+    <None Include="Resources\acer logo.png" />
+    <None Include="Resources\asus logo.png" />
+    <None Include="Resources\lenovo.png" />
+    <None Include="Resources\sony-64.png" />
+    <None Include="Resources\asus.png" />
+    <None Include="Resources\lg-2-64.png" />
+    <None Include="Resources\asus-logo-1024x683.jpg" />
+    <None Include="Resources\pngegg.png" />
+    <None Include="Resources\apple-64.png" />
+    <None Include="Resources\samsung-64.png" />
+    <None Include="Resources\huawei.png" />
+    <None Include="Resources\samsung-32.png" />
+    <None Include="Resources\product brands.jpg" />
+    <None Include="Resources\electronic-gadgets1.jpeg" />
+    <None Include="Resources\arrow-112-24.png" />
+    <None Include="Resources\align-right-2-24.png" />
+    <None Include="Resources\delete-property-24.png" />
+    <None Include="Resources\add-list-24.png" />
+    <None Include="Resources\us-dollar-24.png" />
+    <None Include="Resources\user-24.png" />
+    <None Include="Resources\inbox-6-24.png" />
+    <None Include="Resources\x-mark-5-24.png" />
+    <None Include="Resources\x-mark-24.png" />
+    <None Include="Resources\logo-fococlipping-standard1.png" />
+    <None Include="Resources\logo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccessLayer\NivelAccesDate.csproj">
+      <Project>{fbe4d4f6-6900-4718-aa88-66b5396f7d3f}</Project>
+      <Name>NivelAccesDate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibrarieModele\LibrarieModele.csproj">
+      <Project>{8a468be5-c3b3-4d70-9a48-59a08e84db96}</Project>
+      <Name>LibrarieModele</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets'))" />
+  </Target>
+</Project>
